@@ -1,0 +1,85 @@
+body {
+    color:rgb(8, 85, 199);
+}
+
+.row {
+    justify-content: space-around;
+    background-color: cadetblue;
+    padding:20 50px;
+    margin: 0px 20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.burger-pic {
+    width:250px;
+}
+.item {
+    flex-grow: 1;
+    text-align: center;
+    margin:10px 20px;
+}
+
+.item-text {
+    color:black;
+}
+
+.item-price {
+    font-weight: bold;
+    color:red;
+}
+
+button {
+    width: 95%;
+    height:50px;
+    font-size: 30px;
+    background-color: orange;
+    color:white; 
+    border:none;
+
+    border-radius:20px;
+}
+
+button:hover {
+    background-color:green;
+}
+
+.api-section {
+    margin-top: 20px;
+    background-color:#f3d7c0;
+    padding: 30px;
+
+    display:flex;
+    flex-direction: row;
+}
+
+.api-box {
+    width:45%;
+    border: 5px solid rgb(106, 52, 5);
+    border-radius: 10px;
+    margin:0px 10px;
+
+    background-color: white;
+    flex-grow:1;
+    text-align: center;
+    padding: 0px 0px 40px 0px;
+}
+.api-box-header {
+    margin: 0px 0px 20px 0px;
+    color:black;
+    font-size: 35px;
+}
+
+.api-box-inside {
+    padding-top: 20px;
+}
+
+.api-box-window {
+    width:85%;
+}
+/* .chatbot {
+    flex-grow:1;
+    border: 7px solid rgb(106, 52, 5);
+    border-radius: 7px;
+} */

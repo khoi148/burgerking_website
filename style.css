@@ -1,0 +1,61 @@
+body {
+    font-family: sans-serif;
+}
+nav {
+    background-color: orange;
+    width:100%;
+    padding-left:30px;
+
+    display:flex;
+    align-items: center;
+}
+
+.nav-item {
+    color:white;
+    font-size:30px;
+    text-decoration:none;
+    margin-left:20px;
+}
+
+.main-pic {
+    width:100%;
+}
+.aboutus-title {
+    background-color: grey;
+    color:white;
+    font-size: 80px;
+    font-weight: bold;
+    text-align:center;
+}
+
+.contents {
+    text-align:center;
+    padding-left: 100px;
+    padding-right:100px;
+}
+.aboutus-contents {
+    font-size:20px;
+}
+.aboutus-header {
+    font-weight:500;
+    font-size:60px;
+}
+.aboutus-contact {
+    background-image: url(https://images-ext-1.discordapp.net/external/TvOR-XzxhwtYltaWNAl2eThh5MB3sHp4oeW3W9nR17k/https/company.bk.com/sites/all/themes/custom/bk_theme/img/bg/aboutBK-bg.png);
+    height: 800px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row; 
+    flex-wrap:  wrap;
+
+    justify-content: space-around;
+    padding: 20px 30px;
+    width:100%;
+    background-color: #522e1deb;
+    color:white;
+}
+footer p {
+    margin:0px;
+}
