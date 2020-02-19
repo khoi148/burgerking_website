@@ -1,58 +1,193 @@
-@import url(//db.onlinewebfonts.com/c/6bda4dcd9d8b8c915d5d91b4718c0d6a?family=6eb722d8526a0641+-+subset+of+Parmigiano+Piccolo+Pro+Blk);
-@font-face {font-family: "CoolFont"; src: url("//db.onlinewebfonts.com/t/6bda4dcd9d8b8c915d5d91b4718c0d6a.eot"); src: url("//db.onlinewebfonts.com/t/6bda4dcd9d8b8c915d5d91b4718c0d6a.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/6bda4dcd9d8b8c915d5d91b4718c0d6a.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/6bda4dcd9d8b8c915d5d91b4718c0d6a.woff") format("woff"), url("//db.onlinewebfonts.com/t/6bda4dcd9d8b8c915d5d91b4718c0d6a.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/6bda4dcd9d8b8c915d5d91b4718c0d6a.svg#6eb722d8526a0641 - subset of Parmigiano Piccolo Pro Blk") format("svg"); }
-
-
-body {
-    font-family: CoolFont;
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(245, 245, 245);
+    font-family: impact, sans-serif;
+} 
+button {
+    cursor: pointer;
 }
 nav {
-    background-color: orange;
-    width:100%;
-    padding-left:30px;
+    position: fixed;
+    top:0;
+    width: 93%;
+    z-index: 3;
 
     display:flex;
+    background-color: white;
+    height:60px;
     align-items: center;
-}
-
-.nav-item {
-    color:white;
-    font-size:30px;
-    text-decoration:none;
-    margin-left:20px;
-}
-
-.main-pic {
-    width:100%;
-}
-.aboutus-title {
-    background-color: grey;
-    color:white;
-    font-size: 80px;
+    padding:15px 45px;
     font-weight: bold;
-    text-align:center;
+    font-size: 18px;
+    border-radius: 20px;
+}
+main {
+    /* Making sure there is no overlap between the nav bar, 
+    with fixed position, and the main content, with absolute positioned
+    elements  */
+    z-index: 1;
 }
 
-.contents {
-    text-align:center;
-    padding-left: 100px;
-    padding-right:100px;
+.nav-links {
+    flex-grow: 1;
 }
-.aboutus-contents {
-    font-size:20px;
+.nav-links a {
+    text-decoration: none;
+    color:black;
+    margin: 0px 12px;
 }
-.aboutus-header {
-    font-weight:500;
-    font-size:60px;
+
+.nav-logo {
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
-.aboutus-contact {
-    background-image: url(https://images-ext-1.discordapp.net/external/TvOR-XzxhwtYltaWNAl2eThh5MB3sHp4oeW3W9nR17k/https/company.bk.com/sites/all/themes/custom/bk_theme/img/bg/aboutBK-bg.png);
+
+.nav-buttons {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-grow: 1;
+}
+
+.nav-buttons button {
+    font-size: 15px;
+    border:none;
+    border-radius: 20px;
+    margin: 0px 10px;
+
+    background-color: rgb(232, 130, 75);
+    color: white;
+    padding: 10px 30px;
+}
+.nav-buttons .nav-buttons-signup {
+    background-color: white;
+    color: rgb(232, 130, 75);
+    border: 1px solid rgb(232, 130, 75); 
+}
+
+#section1 .container1 {
+    position: relative;
+}
+#section1 .coverpicture {
+    width:100%;
+    height: 650px;
+}
+
+#section1 .coverpicture-header {
+    position: absolute;
+    top: 18%;
+    left: 5%;
+    color: white;
+    font-size: 50px;
+}
+
+#section1 .coverpicture-header h1 {
+    margin: 0px 0px;
+}
+
+#section1 .coverpicture-header1 {
+    font-size: 60px;
+}
+#section1 .coverpicture-header2 {
+    font-size: 130px;
+}
+
+#section1 .coverpicture-button, #section2 .offers-button{
+    padding: 20px 40px;
+    background-color: rgb(232, 130, 75);
+    color: white;
+    font-size: 15px;
+    border-style: none;
+    border-radius: 20px;
+    font-weight: 900;
+}
+#section1 .coverpicture-button {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+ }
+
+#section2 {
     height: 800px;
+    margin-bottom: 150px;
+}
+#section2 h2 {
+    margin-top: 80px;
+}
+#section2 .offers-header {
+    font-size: 35px;
+    text-align: center;
+}
+
+#section2 .offers-container {
+    width: 80%;
+    margin: 0px auto;
+    height: 700px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 30px 20px;
+
+}
+
+#section2 .offers-container .offers-item {
+    border-radius: 7px;
+    background-color: white;
+    box-shadow: 0px 0px 4px 1px rgb(194, 192, 194);
+    height: 330px;
+}
+
+#section2 .offers-container .offers-item .offers-item-picture-container img {
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: -8px;
+} 
+#section2 .offers-container .offers-item .offers-item-text {
+    padding: 20px;
+}
+#section2 .offers-container .offers-item .offers-item-text h3 {
+    font-size: 22px;
+    margin: 0px 0px 10px 0px;
+} 
+#section2 .offers-container .offers-item .offers-item-text p {
+    font-style: normal;
+    font-weight: 300;
+    font-family: sans-serif;
+    margin-top: 3px;
+} 
+
+#section2 .offers-button-container{
+   margin: 30px 0px;
+   text-align: center;
+}
+
+#section3 .api-container {
+    margin: 0px 60px;
+    display: flex;
+    flex-direction: row;
+}
+#section3 .api-googlemaps-container {
+    border: 5px solid rgb(232, 130, 75); 
+    border-radius: 5px;
+}
+#section3 .api-text-container {
+    width: 50%;
+    text-align: center;
+    margin: 50px 0px;
+}
+#section3 .api-text {
+    font-size: 45px;
 }
 
 footer {
     display: flex;
     flex-direction: row; 
     flex-wrap:  wrap;
+    margin-top: 100px;
 
     justify-content: space-around;
     padding: 20px 30px;
@@ -60,6 +195,7 @@ footer {
     background-color: #522e1deb;
     color:white;
 }
+
 footer p {
-    margin:0px;
+    margin:0px 0px;
 }
