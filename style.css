@@ -1,5 +1,9 @@
+@import url(//db.onlinewebfonts.com/c/6bda4dcd9d8b8c915d5d91b4718c0d6a?family=6eb722d8526a0641+-+subset+of+Parmigiano+Piccolo+Pro+Blk);
+@font-face {font-family: "CoolFont"; src: url("//db.onlinewebfonts.com/t/6bda4dcd9d8b8c915d5d91b4718c0d6a.eot"); src: url("//db.onlinewebfonts.com/t/6bda4dcd9d8b8c915d5d91b4718c0d6a.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/6bda4dcd9d8b8c915d5d91b4718c0d6a.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/6bda4dcd9d8b8c915d5d91b4718c0d6a.woff") format("woff"), url("//db.onlinewebfonts.com/t/6bda4dcd9d8b8c915d5d91b4718c0d6a.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/6bda4dcd9d8b8c915d5d91b4718c0d6a.svg#6eb722d8526a0641 - subset of Parmigiano Piccolo Pro Blk") format("svg"); }
+
+
 body {
-    font-family: sans-serif;
+    font-family: CoolFont;
 }
 nav {
     background-color: orange;
