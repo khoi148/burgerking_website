@@ -9,9 +9,10 @@ button {
 }
 
 nav {
+    margin:0px 4%;
     position: fixed;
     top:0;
-    width: 93%;
+    width: 92%;
     z-index: 3;
 
     display:flex;
